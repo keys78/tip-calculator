@@ -5,9 +5,86 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: hsl(185, 41%, 84%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.input-group{
+  border-radius: 5px;
+  width: 100%;
+  text-align: right;
+  padding:7px 7px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-holder{
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 5px;
+}
+
+.percent-boxes{
+  width: 100%;
+  text-align: center;
+  color:white;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 5px;
+  background: hsl(183, 100%, 15%);
+}
+
+.percent-boxes:hover{
+  background: hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.percent-boxes:focus{
+  background:hsl(172, 67%, 45%) ;
+}
+
+h1{
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.custom{
+  background: hsl(189, 41%, 97%);
+  text-align: center;
+  color:hsl(183, 100%, 15%);;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 5px;
+  
+}
+
+.results-area{
+  background:hsl(183, 100%, 15%) ;
+  color:white;
+}
+
+.results{
+  font-size: 2.5rem;
+  font-weight:500;
+  text-align: right;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.top{
+  font-size: 2rem;
+  font-weight: 400;
+  color:hsl(183, 100%, 15%);
+  letter-spacing: 4px;
 }
