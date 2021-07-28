@@ -27,6 +27,12 @@ code {
   border-radius: 5px;
 }
 
+.input-holder-2{
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 5px;
+  
+}
+
 .percent-boxes{
   width: 100%;
   text-align: center;
@@ -96,4 +102,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .reset-btn:hover{
   background: hsl(185, 41%, 84%)
+}
+
+.error {
+  font-size: 12;
+  font-weight: 500;
+  color:red;
+}
+
+.errorB{
+  border:red 2px solid;
+  border-radius: 5px;
 }

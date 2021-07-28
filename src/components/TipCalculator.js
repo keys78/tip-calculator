@@ -43,11 +43,11 @@ const TipCalculator = () => {
     let defaultNum = 0
 
     const validatePerson = () => {
-        if(!person) {
-           setErrorMsg("can't be zero")
-        } else {
-            setErrorMsg("")
-        }
+        {person ? setErrorMsg('') : setErrorMsg('can\'t be zero') }
+    }
+
+    const validatePerson2 = () => {
+        {person.length > 0 ? setErrorMsg('') : setErrorMsg('can\'t be zero') }
     }
 
 
@@ -77,12 +77,17 @@ const TipCalculator = () => {
                         placeholder="Custom" className="custom"/>
                     </div>
 
-                    <h1>Number of People</h1> <p>{ errorMsg }</p>
-                    <div className="input-holder flex items-center mt-1">
-                        <img className="pl-2" src={process.env.PUBLIC_URL + '/images/icon-person.svg'} alt="person-sign"/>
-                        <input type="number" 
-                         value={person} onChange={(e) => setPerson(e.currentTarget.value)}
-                        placeholder="0" className="input-group focus:outline-none"/>
+                    <div className="flex justify-between items-center">
+                        <h1>Number of People</h1>
+                        <p className="error">{ errorMsg }</p>
+                    </div>
+                    <div className={ errorMsg ? "errorB" : "input-holder" }>
+                        <div className="flex items-center nt-1">
+                            <img className="pl-2" src={process.env.PUBLIC_URL + '/images/icon-person.svg'} alt="person-sign"/>
+                            <input type="number" onKeyUp={validatePerson2}
+                            value={person} onChange={(e) => setPerson(e.currentTarget.value)}
+                            placeholder="0" className="input-group focus:outline-none"/>
+                        </div>
                     </div>
                 </div>
 
