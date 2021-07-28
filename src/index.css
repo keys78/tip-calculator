@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+.domine{
+  font-family: 'Domine', serif;
+}
+
 .input-group{
   border-radius: 5px;
   width: 100%;
@@ -61,7 +65,7 @@ h1{
 }
 
 .custom{
-  background: hsl(189, 41%, 97%);
+  background: hsl(180, 11%, 95%);
   text-align: center;
   color:hsl(183, 100%, 15%);;
   font-size: 18px;
@@ -81,6 +85,7 @@ h1{
   font-weight:500;
   text-align: right;
   color:hsl(172, 67%, 45%);
+  font-family: 'Domine', serif;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -113,4 +118,8 @@ input[type=number]::-webkit-outer-spin-button {
 .errorB{
   border:red 2px solid;
   border-radius: 5px;
+}
+
+.attr{
+  color:hsl(172, 67%, 45%);;
 }

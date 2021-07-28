@@ -53,7 +53,7 @@ const TipCalculator = () => {
 
     return (
         <div>
-            <div className="md:w-1/12 w-2/12 mx-auto md:text-center font-bold text-left md:mt-24 mb-5 mt-8 top">SPLI <br></br> TTER </div>
+            <div className="md:w-1/12 w-2/12 mx-auto md:text-center font-bold text-left md:mt-16 mb-5 mt-4 top">SPLI <br></br> TTER </div>
         <div className="xl:w-7/12 lg:w-9/12 w-11/12 mx-auto bg-white rounded-2xl sm:mb-0 mb-10 sm:px-8 px-4 md:py-4 py-0">
             <form className="container py-6 grid md:grid-cols-2 grid-cols-1 gap-6">
                 <div className="Input-area">
@@ -113,6 +113,7 @@ const TipCalculator = () => {
                     </div>
                 </div>
             </form>
+            <h6 class="text-black font-semibold text-right">| Coded by <a class="attr" href="https://twitter.com/Emmy31087589">Em_codes</a></h6>
         </div>
         </div>
     )
