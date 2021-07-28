@@ -49,9 +49,9 @@ code {
 }
 
 h1{
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .custom{
@@ -74,6 +74,7 @@ h1{
   font-size: 2.5rem;
   font-weight:500;
   text-align: right;
+  color:hsl(172, 67%, 45%);
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -87,4 +88,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 400;
   color:hsl(183, 100%, 15%);
   letter-spacing: 4px;
+}
+
+.reset-btn{
+  background: hsl(172, 67%, 45%);;
+}
+
+.reset-btn:hover{
+  background: hsl(185, 41%, 84%)
 }
